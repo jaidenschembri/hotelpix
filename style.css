@@ -6,7 +6,7 @@
   
   body {
     font-family: Helvetica, sans-serif;
-    background: #e8f0f9;
+    background: #bbdbff;
     color: #000;
   }
   .header {
@@ -80,37 +80,17 @@
   
   .image-grid img {
     width: 100%;
-    border: 1px solid #ccc;
+    border: 0.75vw solid #ffffff;
     object-fit: cover;
   }
   
   .caption {
     font-size: 0.8rem;
     color: #0000FF;
+    border: #ffffff 0.5px solid;
+    padding: 0.25rem;
   }
   
-  @media (max-width: 768px) {
-    .info-block {
-      padding: 0.5rem;
-    }
-  
-    .info-block img {
-      width: 60px;
-      height: 60px;
-      object-fit: cover;
-    object-position: center;
-    }
-  
-    .info-block p {
-      font-size: 0.5rem;
-      line-height: 1.1;
-      margin-bottom: 0.25rem;
-    }
-  
-    .info-block a {
-      font-size: 0.4rem;
-    }
-  }
   .player-controls button img,
   .player-controls button svg {
     width: 20px;
@@ -172,3 +152,25 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .info-block {
+      padding: 0.5rem;
+    }
+  
+    .info-block img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    object-position: center;
+    }
+  
+    .info-block p {
+      font-size: 0.5rem;
+      line-height: 1.1;
+      margin-bottom: 0.25rem;
+    }
+  
+    .info-block a {
+      font-size: 0.4rem;
+    }
+  }
