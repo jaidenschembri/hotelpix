@@ -139,3 +139,18 @@
     padding: 0.5rem;
   }
   
+  @media (max-width: 768px) {
+    .header {
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+    }
+  
+    .logo {
+      text-align: left;
+    }
+  
+    .player-controls {
+      margin-left: 0; /* reset desktop override */
+    }
+  }
+  
