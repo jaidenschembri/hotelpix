@@ -9,11 +9,10 @@
     background: #e8f0f9;
     color: #000;
   }
-  
   .header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     background: #fff;
@@ -23,20 +22,11 @@
   
   .logo {
     font-weight: bold;
+    font-size: 1.2rem;
   }
   
   .logo .highlight {
     color: #57aaff;
-  }
-  
-  .username {
-    font-weight: bold;
-    color: #444;
-  }
-  
-  .dots {
-    font-size: 1.2rem;
-    color: #bbb;
   }
   
   .feed {
