@@ -10,8 +10,15 @@
 
   <header class="header">
     <div class="logo center">hotel<span class="highlight">pix</span></div>
-  </header>
+    <div class="player-controls">
+      <button id="prevBtn"><img src="images/icons/reverse.svg" /></button>
+      <button id="playPauseBtn"><img src="images/icons/play.svg" id="playPauseIcon" /></button>
+      <button id="nextBtn"><img src="images/icons/skip.svg" /></button>
 
+      <audio id="audioPlayer" src="audio/track1.mp3"></audio>
+    </div>
+  </header>
+  
   <div class="feed">
 
     <div class="post">
@@ -43,40 +50,9 @@
           <p class="caption">11 stories high + a pair of pleasers</p>
         </div>
       </div>
-      
-      <div class="post">
-        <div class="info-block">
-          <img src="images/b9f5eb23-142f-460a-8626-443404fb9b24.png" alt="Avatar" />
-          <p><strong>Posted 4:44 PM</strong><br>April 18, 2025<br>by Vanessa Trance</p>
-          <a href="#">Link this post ✚</a>
-        </div>
-        <div class="post-content">
-          <div class="image-grid">
-            <img src="images/DSCN5185.jpg" alt="Photo 1">
-            <img src="images/DSCN5186.jpg" alt="Photo 2">
-          </div>
-          <p class="caption">Studio was giving chrome fatigue. Boots on the wall. Felt real.</p>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="info-block">
-          <img src="images/b9f5eb23-142f-460a-8626-443404fb9b24.png" alt="Avatar" />
-          <p><strong>Posted 4:44 PM</strong><br>April 18, 2025<br>by Vanessa Trance</p>
-          <a href="#">Link this post ✚</a>
-        </div>
-        <div class="post-content">
-          <div class="image-grid">
-            <img src="images/DSCN5185.jpg" alt="Photo 1">
-            <img src="images/DSCN5186.jpg" alt="Photo 2">
-          </div>
-          <p class="caption">Studio was giving chrome fatigue. Boots on the wall. Felt real.</p>
-        </div>
-      </div>
-
   </div>
 
+  <script src="script.js"></script>
 
-  
 </body>
 </html>
