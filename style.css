@@ -53,7 +53,6 @@
   .info-block img {
     width: 100px;
     height: 100px;
-    border-radius: 4px;
     margin-bottom: 0.5rem;
     object-fit: cover;
     object-position: center;
