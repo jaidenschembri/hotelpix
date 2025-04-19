@@ -11,13 +11,26 @@
   <header class="header">
     <div class="logo center">hotel<span class="highlight">pix</span></div>
     <div class="player-controls">
-      <button id="prevBtn"><img src="images/icons/reverse.svg" /></button>
-      <button id="playPauseBtn"><img src="images/icons/play.svg" id="playPauseIcon" /></button>
-      <button id="nextBtn"><img src="images/icons/skip.svg" /></button>
-
+      <button id="prevBtn" aria-label="Previous">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M11 18V6l-8.5 6L11 18zM13 6v12h2V6h-2z"></path>
+        </svg>
+      </button>
+      <button id="playPauseBtn" aria-label="Play/Pause">
+        <svg id="playPauseIcon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M8 5v14l11-7z"></path> <!-- this is the "play" icon -->
+        </svg>
+      </button>
+      <button id="nextBtn" aria-label="Next">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M5 6v12l8.5-6L5 6zM15 6v12h2V6h-2z"></path>
+        </svg>
+      </button>
+  
       <audio id="audioPlayer" src="audio/track1.mp3"></audio>
     </div>
   </header>
+  
   
   <div class="feed">
 
