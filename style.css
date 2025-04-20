@@ -80,7 +80,7 @@
   
   .image-grid img {
     width: 100%;
-    border: 0.75vw solid #ffffff;
+    border: 0.5vw solid #ffffff;
     object-fit: cover;
   }
   
