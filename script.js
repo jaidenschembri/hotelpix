@@ -8,6 +8,9 @@ const playPath = `<path d="M8 5v14l11-7z"></path>`;
 const pausePath = `<path d="M6 5h4v14H6V5zm8 0h4v14h-4V5z"></path>`;
 
 const tracks = [
+  "mp3's/You'll See It.mp3",
+  "mp3's/Washed Out - You And I.mp3",
+  "mp3's/SKRILLEX - ALL I ASK OF YOU (FEAT PENNY).mp3",
   "mp3's/Skrillex - Summit (feat. Ellie Goulding) [Video by Pilerats].mp3",
 ];
 
