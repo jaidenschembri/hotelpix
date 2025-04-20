@@ -174,3 +174,31 @@
       font-size: 0.4rem;
     }
   }
+
+  /* WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(200, 200, 255, 0.1); /* Track color */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0000FF; /* Default thumb color */
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FF69B4; /* Hover color */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0000FF rgba(200, 200, 255, 0.1);
+}
