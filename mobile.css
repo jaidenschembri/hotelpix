@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+    .header {
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+    }
+  
+    .logo {
+      text-align: left;
+    }
+  
+    .player-controls {
+      margin-left: 0; /* reset desktop override */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      background: #e8f0f9; /* match body background */
+      border-bottom: 1px solid #0000FF;
+    }
+  
+    .feed {
+      margin-top: 80px; /* offset the height of fixed header */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .info-block {
+      padding: 0.5rem;
+    }
+  
+    .info-block img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    object-position: center;
+    }
+  
+    .info-block p {
+      font-size: 0.5rem;
+      line-height: 1.1;
+      margin-bottom: 0.25rem;
+    }
+  
+    .info-block a {
+      font-size: 0.4rem;
+    }
+  }
