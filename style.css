@@ -148,3 +148,46 @@
   scrollbar-width: thin;
   scrollbar-color: #0000FF rgba(200, 200, 255, 0.1);
 }
+
+#password-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #000000cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(30px);
+}
+
+.password-box {
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  border: 1px solid #0000FF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.password-box input {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  font-size: 1rem;
+}
+
+.password-box button {
+  padding: 0.5rem;
+  background: #0000FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#password-error {
+  color: red;
+  font-size: 0.9rem;
+}
