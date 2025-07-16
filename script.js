@@ -56,26 +56,26 @@ audio.addEventListener("ended", () => {
   loadTrack(currentTrack);
 });
 
-function checkPassword() {
-  const input = document.getElementById("site-password").value;
-  const correctPassword = "Molly42069"; // 🔒
+// function checkPassword() {
+//   const input = document.getElementById("site-password").value;
+//   const correctPassword = "Molly42069"; // 🔒
 
-  if (input === correctPassword) {
-    unlockSite();
-  } else {
-    document.getElementById("password-error").textContent = "Wrong password.";
-  }
-}
+//   if (input === correctPassword) {
+//     unlockSite();
+//   } else {
+//     document.getElementById("password-error").textContent = "Wrong password.";
+//   }
+// }
 
-function unlockSite() {
-  const overlay = document.getElementById("password-overlay");
-  if (overlay) {
-    overlay.style.display = "none";
-    document.body.style.overflow = ""; // re-enable scroll
-    loadTrack(currentTrack);
-  }
-}
+// function unlockSite() {
+//   const overlay = document.getElementById("password-overlay");
+//   if (overlay) {
+//     overlay.style.display = "none";
+//     document.body.style.overflow = ""; // re-enable scroll
+//     loadTrack(currentTrack);
+//   }
+// }
 
-window.addEventListener("DOMContentLoaded", () => {
-  document.body.style.overflow = "hidden";
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   document.body.style.overflow = "hidden";
+// });
