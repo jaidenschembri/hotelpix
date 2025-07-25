@@ -38,13 +38,23 @@ playPauseBtn.addEventListener("click", () => {
 });
 
 prevBtn.addEventListener("click", () => {
+  const wasPlaying = !audio.paused;
   currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
   loadTrack(currentTrack);
+  if (wasPlaying) {
+    audio.play();
+    updatePlayIcon(true);
+  }
 });
 
 nextBtn.addEventListener("click", () => {
+  const wasPlaying = !audio.paused;
   currentTrack = (currentTrack + 1) % tracks.length;
   loadTrack(currentTrack);
+  if (wasPlaying) {
+    audio.play();
+    updatePlayIcon(true);
+  }
 });
 
 audio.addEventListener("ended", () => {
