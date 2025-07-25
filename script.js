@@ -23,12 +23,8 @@ function updatePlayIcon(isPlaying) {
 function loadTrack(index) {
   audio.src = tracks[index];
   audio.load();
-  audio.play().then(() => {
-    updatePlayIcon(true);
-  }).catch(err => {
-    console.warn("Autoplay blocked:", err);
-    updatePlayIcon(false);
-  });
+  // Don't auto-play, just prepare the track
+  updatePlayIcon(false);
 }
 
 playPauseBtn.addEventListener("click", () => {
@@ -76,6 +72,8 @@ audio.addEventListener("ended", () => {
 //   }
 // }
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   document.body.style.overflow = "hidden";
-// });
+// Initialize the music player when page loads
+window.addEventListener("DOMContentLoaded", () => {
+  // Load the first track but don't play it
+  loadTrack(currentTrack);
+});
